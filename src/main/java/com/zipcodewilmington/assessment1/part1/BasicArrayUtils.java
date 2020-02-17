@@ -1,5 +1,10 @@
 package com.zipcodewilmington.assessment1.part1;
 
+import sun.jvm.hotspot.types.CIntegerField;
+
+import java.util.ArrayList;
+import java.util.Arrays;
+
 /**
  * Created by leon on 2/16/18.
  */
@@ -9,7 +14,7 @@ public class BasicArrayUtils {
      * @return the first element in the array
      */
     public static String getFirstElement(String[] stringArray) {
-        return null;
+        return stringArray[0];
     }
 
     /**
@@ -17,7 +22,8 @@ public class BasicArrayUtils {
      * @return the second element in the array
      */
     public static String getSecondElement(String[] stringArray) {
-        return null;
+
+        return stringArray[1];
     }
 
     /**
