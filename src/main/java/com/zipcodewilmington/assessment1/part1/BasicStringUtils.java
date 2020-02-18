@@ -11,7 +11,7 @@ public class BasicStringUtils {
      * @return string with identical content, and the first character capitalized
      */
     public static String camelCase(String str) {
-       String result = str;
+        String result = str;
        result = result.substring(0,1).toUpperCase() + result.substring((1)).toLowerCase();
         return result;
     }
@@ -36,6 +36,7 @@ public class BasicStringUtils {
         StringBuffer buffer = new StringBuffer(str);
         result = buffer.reverse().toString();
         result = result.substring(0,1).toUpperCase() + result.substring((1)).toLowerCase();
+        // return camelCase (reverse(str));
         return result;
     }
 
@@ -47,6 +48,7 @@ public class BasicStringUtils {
     public static String removeFirstAndLastCharacter(String str) {
         String result = str;
         result = result.substring(1,14);
+        //result str.substring(1, str.length()-1);
         return result;
     }
 

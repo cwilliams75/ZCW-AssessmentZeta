@@ -15,6 +15,11 @@ public class RockPaperSissorsEvaluator {
     public String getWinningMove(String handSign) {
         String s = handSign;
         String replaceString =handSign.replace("rock", "paper");
+        //if (handSign.equal (ROCK) return PAPER;
+        //if (handSign.equal (PAPER) return SCISSOR;
+        //if (handSign.equal (SCISSOR) return PAPER;
+        //return "tie";
+
 
         return replaceString;
     }
@@ -42,4 +47,7 @@ public class RockPaperSissorsEvaluator {
 
         return replaceString;
     }
+    // if (getWinningMove(handSignOfPlayer1).equals(getLosingMove(handSignOfPlayer2))){
+    // return handSignOfPlayer1;
+
 }
