@@ -15,7 +15,7 @@ public class ArrayUtils {
     public static Integer getNumberOfOccurrences(Object[] objectArray, Object objectToCount) {
         int n = 0;
         for (Object to : objectArray){
-            if (to.equals(objectToCount));
+            if (to.equals(objectToCount)) n+=1;
         }
 
         return n;

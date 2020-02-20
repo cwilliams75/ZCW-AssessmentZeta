@@ -6,7 +6,7 @@ import org.junit.Test;
 /**
  * Created by leon on 2/16/18.
  */
-public class MultiplesDeleterTest {
+public class  MultiplesDeleterTest {
     MultiplesDeleter deleter = new MultiplesDeleter();
 
 
