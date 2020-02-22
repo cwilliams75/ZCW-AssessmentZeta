@@ -1,5 +1,6 @@
 package com.zipcodewilmington.assessment1.part2;
 
+import com.sun.xml.internal.fastinfoset.util.StringArray;
 import com.zipcodewilmington.assessment1.part1.BasicStringUtils;
 
 /**
@@ -23,8 +24,8 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word of the sentence
      */
     public static String getFirstWord(String sentence) {
-        String[] sentenceArray = new String[3];
-        sentenceArray = sentence.split("");
+
+       String[] sentenceArray = sentence.split(" ");
         return sentenceArray[0];
     }
 
@@ -44,7 +45,13 @@ public class StringUtils {
      * given a string containing words delimited by spaces, representative of a sentence, return the first word with identical contents in reverse order with the first character capitalized
      */
     public static String reverseFirstWordThenCamelCase(String sentence) {
-        return BasicStringUtils.camelCase(reverseFirstWordThenCamelCase(sentence));
+        String revFirstWord = reverseFirstWord(sentence); // leon
+        String capFirstLetter = revFirstWord.substring(0,1).toUpperCase(); // L
+        String endingLetters = revFirstWord.substring(1); //eon ...
+        String finalWord = capFirstLetter + endingLetters; // L + eon
+
+
+        return finalWord; // Leon
     }
 
 
@@ -55,6 +62,7 @@ public class StringUtils {
      * given a string and index, return an identical string excluding the character at the specified index
      */
     public static String removeCharacterAtIndex(String str, int index) {
+
         return str.substring(0,index) + str.substring(index+1);
     }
 

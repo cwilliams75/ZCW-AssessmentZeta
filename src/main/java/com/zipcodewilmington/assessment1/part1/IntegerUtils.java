@@ -24,7 +24,7 @@ public class IntegerUtils {
      */
     public static Integer getProductOfN(Integer n) {
         int s = 1;
-        for (int k = 0; k <= n; k++) {
+        for (int k = 1; k <= n; k++) {
             s *= k;
         }
             return s;
